@@ -1,5 +1,7 @@
 ### News
 
+**18th March 2018:** We are now online!
+
 ### Menu
 * [Task Description](#task-description)
 * [Data Description](#data-description)
