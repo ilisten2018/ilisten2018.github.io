@@ -12,9 +12,22 @@
 * [Contacts](#contacts)
 
 ### Task Description
-iLISTEN, the first itaLIan Speech acT labEliNg task at Evalita 2018
 
-Task The task consists in automatically annotating dialogue turns with speech act labels, i.e. with the communicative intention of the speaker, such as statement, request for information, agreement, opinion expression, general answer, etc. Table 1 reports the full set of speech act labels, with definition and examples. Regarding the evaluation procedure, we will assess the ability of each system to issue the correct speech act label among those included in the taxon- omy used for annotation, described in the following. Specifically, we will compute precision, recall and F1-score (macroaveraging) with respect to our gold standard. This approach, while more verbose than a simple accuracy test, arise from the need to correctly address the un- balance distribution of labels in the dataset. Furthermore, by providing detailed performance metrics, we aim at enhancing interesting conclusions on the nature of the problem and the data, as they might emerge from the participants’ final reports.
+The task consists in automatically annotating dialogue turns with speech act labels, i.e. with the communicative intention of the speaker, such as statement, request for information, agreement, opinion expression, general answer, etc. [Table 1](#tab1) reports the full set of speech act labels, with definition and examples. Regarding the evaluation procedure, we will assess the ability of each system to issue the correct speech act label among those included in the taxonomy used for annotation, described in the following. Specifically, we will compute precision, recall and F1-score (macroaveraging) with respect to our gold standard. This approach, while more verbose than a simple accuracy test, arise from the need to correctly address the unbalance distribution of labels in the dataset. Furthermore, by providing detailed performance metrics, we aim at enhancing interesting conclusions on the nature of the problem and the data, as they might emerge from the participants’ final reports.
+
+<a name="tab1">**Table 1.**</a> Full set of speech act labels.
+
+| Speech Act         | Description | Example |
+|:-------------------|:------------|:--------|
+| OPENING            | Dialogue opening or self-introduction | *"Ciao, io sono Antonella"* |
+| CLOSING            | Dialogue closing, e.g. farewell, wishes, intention to close the conversation | *"Va bene, ci vediamo prossimamente"* |
+| INFO-REQUEST       | Utterances that are pragmatically, semantically, and syntactically questions | *"E cosa mi dici delle vitamine?"*|
+| SOLICIT-REQ-CLARIF | Request for clarification (please explain) or solicitation of system reaction            | *"Mmm, si ma in che senso?"* |
+| STATEMENT          | Descriptive, narrative, personal statements | *"Penso che dovrei controllare maggiormente il consumo di dolciumi."* |
+| GENERIC-ANSWER     | Generic answer | *"Si", "No", "Non so"* |
+| AGREE-ACCEPT       | Expression of agreement, e.g. acceptance of a proposal, plan or opinion            | *"Si, so che è importante."*        |
+| REJECT             | Expression of disagreement, e.g. rejection of a proposal, plan, or opinion            | *"Ho sentito tesi contrastanti al proposito."*        |
+| KIND-ATT-SMALLTALK | Expression of kind attitude through politeness, e.g. thanking, apologizing or smalltalk | *"Grazie","Sei per caso offesa per qualcosa che ho detto?"*        |
 
 ### Data Description
 
