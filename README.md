@@ -31,10 +31,51 @@ The task consists in automatically annotating dialogue turns with speech act lab
 
 ### Data Description
 
-### Data Format
-We will provide a set of both training and testing dialogues in the XML format:
+**A Dataset of Dialogues.** We leverage the corpus of natural language dialogues collected in the scope of previous research about Human-ECA interaction [[4]](#4), in order to speed up the process of building a gold standard. The corpus contains overall transcripts of 60 dialogues, 1,576 user dialogue turns, 1,611 system turns and about 22,000 words.
 
-Description here
+The dialogues were collected using a Wizard of Oz tool as dialogue manager. Sixty subjects (aged between 21–28) involved in the study, in two interaction mode conditions: thirty of them interacted with the system in a written-input setting, using keyboard and mouse; the remaining thirty dialogues were collected with users interacting with the ECA in a spoken-input condition. Dialogues collected using the spoken interaction mode were manually transcribed based on audio-recording of the dialogue sessions. Information about interaction mode (spoken vs. written) will be provided to participant with the dataset.
+
+During the interaction, the ECA played the role of an artificial therapist and the users were free to interact with it in natural language, without any particular constraint: they could simply answer the question of the agent or taking the initiative and ask questions in their turn, make comments about the agent behavior or competence, argument in favor or against the agent's suggestion or persuasion attempts. The Wizard, on his behalf, had to choose among a set of about 80 predefined possible move. As such, the pre-defined system moves are provided only as a context information but will not be subject to evaluation and will not contribute to the final ranking of the participant systems. Conversely, systems will be evaluated on the basis of the performance observed for the user dialogue turns.
+
+**Annotation.** Speech acts can be identified with the communicative goal of a given utterance, i.e. it represents its meaning at the level of its \textit{illocutionary force} [[1]](#1).
+In defining dialogue act taxonomies, researchers have been trying to solve the trade-off between the need for formal semantics and the need for computational feasibility, also taking into account the specificity of the many application domains that have been investigated (see [[8]](#8) for an exhaustive overview). The Dialogue Act Markup in Several Layers (DAMSL) represent an attempt by [[2]](#2) to define a domain independent framework for speech act annotation.
+
+Defining a DA markup language is out of the scope of the present study. Therefore, we adopt the original annotation of the Italian advice-giving dialogues. [Table 1](#tab1) shows the set of nine labels employed for the purpose of this study, with definitions and examples. The taxonomy refines the DAMSL categories to allow appropriate tagging of the communicative intention with respect to the application domain, i.e. persuasion dialogues in the healthy eating domain.
+
+In [Table 2](#tab2) we provide an excerpt from a dialogue from our gold standard. The system moves (dialogue moves and corresponding speech act labels) will be only as a context information. Conversely, the final ranking of the participating systems will be performed based on the performance observed only on the users' move, with respect to the set of users' label provided in [Table 1](#tab1). Please, note that the set of agent's moves will include also speech acts (such as persuasion attempts) that are observed only for the agent, given its caregiver role in the dialogue systems.
+
+<a name="tab2">**Table 2.**</a> Full set of speech act labels.
+
+| Actor | ID    | Speech Act | Dialogue Move |
+|:------|:-----|:-----------|:--------------|
+| SYSTEM | 5-S1 | OPENING | *Ciao, il mio nome è Valentina. Sono qui per darti dei suggerimenti su come migliorare la tua dieta* |
+| USER | 5-U1 | OPENING | *Ciao, il mio nome è Oriana.* |
+| SYSTEM | 5-S2 | INFO-REQUEST | *Quali sono le tue abitudini alimentari?* |
+| USER | 5-U2 | STATEMENT | *Ho delle abitudini disordinate, mangio anche fuori orario.* |
+| SYSTEM | 5-S3 | INFO-REQUEST | *Ti piace mangiare?* |
+| USER | 5-U3 | STATEMENT | *Si, ma dipende dal periodo: se sono sotto stress mangio meno, quando sono più rilassata mangio molto* |
+| SYSTEM | 5-S4 | INFO-REQUEST | *Segui una dieta variata?* |
+| USER | 5-U3 | GENERIC-ANSWER | *No.* |
+
+### Data Format
+
+We will provide a set of both training and testing dialogues in the XML format following the struture proposed in [Table 2](#tab2).
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogues>
+  <dialogue>
+    <speechAct act="OPENING" actId="13" id="5_S1">Ciao, il mio nome e' Valentina. Sono qui per darti dei suggerimenti su come migliorare la tua dieta.</speechAct>
+    <speechAct act="OPENING" actId="10" id="5_U1">ciao il mio nome è oriana</speechAct>
+    <speechAct act="QUESTION" actId="12" id="5_S2">Quali sono le tue abitudini alimentari?</speechAct>
+    <speechAct act="STAT-ABOUT-SELF" actId="5" id="5_U2">ho delle abitudini un pò disordinate,nel senso che mangio anche fupri orario</speechAct>
+    <speechAct act="QUESTION" actId="12" id="5_S3">Ti piace mangiare?</speechAct>
+    <speechAct act="STAT-ABOUT-SELF" actId="5" id="5_U2">si,ma dipende dal periodo,se sono sotto stress mangio meno,quando sono più rilassata mangio molto</speechAct>
+    <speechAct act="QUESTION" actId="12" id="5_S4">Segui una dieta variata?</speechAct>
+    <speechAct act="GENERIC-ANSWER" actId="7" id="5_U4">no</speechAct>
+    ...
+```
+
 
 ### How to Participate
 
