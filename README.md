@@ -1,5 +1,7 @@
 ### News
 
+**3rd April 2018:** Registration are now open! Fill-in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdAKar1gv-Spoc3cPGYyzgBG5-fETVWvKfvSO1_v-Wc6RNfjQ/viewform).
+
 **18th March 2018:** We are now online!
 
 ### Menu
