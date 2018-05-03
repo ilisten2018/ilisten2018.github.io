@@ -1,3 +1,4 @@
+
 ### News
 
 **3rd April 2018:** Registration are now open! Fill-in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdAKar1gv-Spoc3cPGYyzgBG5-fETVWvKfvSO1_v-Wc6RNfjQ/viewform).
@@ -15,7 +16,7 @@
 
 ### Task Description
 
-The task consists in automatically annotating dialogue turns with speech act labels, i.e. with the communicative intention of the speaker, such as statement, request for information, agreement, opinion expression, general answer, etc. [Table 1](#tab1) reports the full set of speech act labels, with definition and examples. Regarding the evaluation procedure, we will assess the ability of each system to issue the correct speech act label among those included in the taxonomy used for annotation, described in the following. Specifically, we will compute precision, recall and F1-score (macroaveraging) with respect to our gold standard. This approach, while more verbose than a simple accuracy test, arise from the need to correctly address the unbalance distribution of labels in the dataset. Furthermore, by providing detailed performance metrics, we aim at enhancing interesting conclusions on the nature of the problem and the data, as they might emerge from the participants’ final reports.
+The task consists in automatically annotating dialogue turns with speech act labels, i.e. with the communicative intention of the speaker, such as statement, request for information, agreement, opinion expression, general answer, etc. [Table 1](#tab1) reports the full set of speech act labels, with definition and examples. Regarding the evaluation procedure, we will assess the ability of each system to issue the correct speech act label among those included in the taxonomy used for annotation, described in the following. Specifically, we will compute precision, recall and F1-score (macroaveraging) with respect to our gold standard. This approach, while more verbose than a simple accuracy test, arise from the need to correctly address the unbalance distribution of labels in the dataset. Furthermore, by providing detailed performance metrics, we aim at enhancing interesting conclusions on the nature of the problem and the data, as they might emerge from the participants’ final reports. As a baseline, we will use the most frequent label for the user speech acts. 
 
 <a name="tab1">**Table 1.**</a> Full set of speech act labels.
 
