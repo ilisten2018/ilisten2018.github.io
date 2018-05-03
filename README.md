@@ -1,4 +1,3 @@
-
 ### News
 
 **3rd April 2018:** Registration are now open! Fill-in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdAKar1gv-Spoc3cPGYyzgBG5-fETVWvKfvSO1_v-Wc6RNfjQ/viewform).
@@ -28,7 +27,7 @@ The task consists in automatically annotating dialogue turns with speech act lab
 | SOLICIT-REQ-CLARIF | Request for clarification (please explain) or solicitation of system reaction            | *"Mmm, si ma in che senso?"* |
 | STATEMENT          | Descriptive, narrative, personal statements | *"Penso che dovrei controllare maggiormente il consumo di dolciumi."* |
 | GENERIC-ANSWER     | Generic answer | *"Si", "No", "Non so"* |
-| AGREE-ACCEPT       | Expression of agreement, e.g. acceptance of a proposal, plan or opinion            | *"Si, so che è importante."*        |
+| AGREE       | Expression of agreement, e.g. acceptance of a proposal, plan or opinion            | *"Si, so che è importante."*        |
 | REJECT             | Expression of disagreement, e.g. rejection of a proposal, plan, or opinion            | *"Ho sentito tesi contrastanti al proposito."*        |
 | KIND-ATT-SMALLTALK | Expression of kind attitude through politeness, e.g. thanking, apologizing or smalltalk | *"Grazie","Sei per caso offesa per qualcosa che ho detto?"*        |
 
