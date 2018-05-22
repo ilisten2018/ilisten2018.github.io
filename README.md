@@ -1,5 +1,7 @@
 ### News
 
+**22nd May 2018:** Download the task [guidelines](https://).
+
 **3rd April 2018:** Registration are now open! Fill-in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdAKar1gv-Spoc3cPGYyzgBG5-fETVWvKfvSO1_v-Wc6RNfjQ/viewform).
 
 **18th March 2018:** We are now online!
@@ -80,7 +82,7 @@ We will provide a set of both training and testing dialogues in the XML format f
 
 Each participating team will initially have access to the training data only. Later, the unlabelled test data will be released.
 
-The participants must provide results in a plain text file with comma-separated fields. Only the dialogue turn of the User, marked as **U** (as in id="T_5_**U**4") will be subject to evaluation and should be returned. In the following, we report an example of a what a submitted run should look like. Please, note that the **id** in the first column (in bold) should be the same provided for each User dialogue turn in the test set, while the speech *act* label in the second column (in italic) is the prediction of your system.
+The participants must provide results in a plain text file with comma-separated fields. Only the dialogue turns of the User, marked as **U** (as in id="T_5_**U**4") will be subject to evaluation and should be returned. In the following, we report an example of a what a submitted run should look like. Please, note that the **id** in the first column (in bold) should be the same provided for each User dialogue turn in the test set, while the speech *act* label in the second column (in italic) is the prediction of your system.
 
 >  **id**,*act*<br>
 **T_5_U1**,*OPENING*<br>
