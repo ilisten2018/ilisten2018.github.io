@@ -15,7 +15,7 @@
 
 ### Task Description
 
-The task consists in automatically annotating dialogue turns with speech act labels, i.e. with the communicative intention of the speaker, such as statement, request for information, agreement, opinion expression, general answer, etc. [Table 1](#tab1) reports the full set of speech act labels, with definition and examples. Regarding the evaluation procedure, we will assess the ability of each system to issue the correct speech act label among those included in the taxonomy used for annotation, described in the following. Specifically, we will compute precision, recall and F1-score (macroaveraging) with respect to our gold standard. This approach, while more verbose than a simple accuracy test, arise from the need to correctly address the unbalance distribution of labels in the dataset. Furthermore, by providing detailed performance metrics, we aim at enhancing interesting conclusions on the nature of the problem and the data, as they might emerge from the participants’ final reports. As a baseline, we will use the most frequent label for the user speech acts. 
+The task consists in automatically annotating dialogue turns with speech act labels, i.e. with the communicative intention of the speaker, such as statement, request for information, agreement, opinion expression, general answer, etc. [Table 1](#tab1) reports the full set of speech act labels, with definition and examples. Regarding the evaluation procedure, we will assess the ability of each system to issue the correct speech act label among those included in the taxonomy used for annotation, described in the following. Specifically, we will compute precision, recall and F1-score (macroaveraging) with respect to our gold standard. This approach, while more verbose than a simple accuracy test, arise from the need to correctly address the unbalance distribution of labels in the dataset. Furthermore, by providing detailed performance metrics, we aim at enhancing interesting conclusions on the nature of the problem and the data, as they might emerge from the participants’ final reports. As a baseline, we will use the most frequent label for the user speech acts.
 
 <a name="tab1">**Table 1.**</a> Full set of speech act labels.
 
@@ -78,14 +78,14 @@ We will provide a set of both training and testing dialogues in the XML format f
     ...
 ```
 
-Each participating team will initially have access to the training data only. Later, the unlabelled test data will be released. 
+Each participating team will initially have access to the training data only. Later, the unlabelled test data will be released.
 
-The participants must provide results in a plain text file with comma-separated fields. Only the dialogue turn of the User, marked as **U** (as in id="T_5_**U**4") will be subject to evaluation and should be returned. In the following, we report an example of a what a submitted run should look like. Please, note that the **id** in the first column (in bold) should be the same provided for each User dialogue turn in the test set, while the speech *act* label in the second column (in italic) is the prediction of your system. 
+The participants must provide results in a plain text file with comma-separated fields. Only the dialogue turn of the User, marked as **U** (as in id="T_5_**U**4") will be subject to evaluation and should be returned. In the following, we report an example of a what a submitted run should look like. Please, note that the **id** in the first column (in bold) should be the same provided for each User dialogue turn in the test set, while the speech *act* label in the second column (in italic) is the prediction of your system.
 
->  **id**,*act*
-**T_5_U1**,*OPENING*
-**T_5_U2**,*STAT-ABOUT-SELF*
-**T_5_U4**,*GENERIC-ANSWER*
+>  **id**,*act*<br>
+**T_5_U1**,*OPENING*<br>
+**T_5_U2**,*STAT-ABOUT-SELF*<br>
+**T_5_U4**,*GENERIC-ANSWER*<br>
 ...
 
 
