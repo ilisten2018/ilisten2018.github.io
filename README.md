@@ -67,16 +67,26 @@ We will provide a set of both training and testing dialogues in the XML format f
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dialogues>
   <dialogue>
-    <speechAct act="OPENING" actId="13" id="5_S1">Ciao, il mio nome e' Valentina. Sono qui per darti dei suggerimenti su come migliorare la tua dieta.</speechAct>
-    <speechAct act="OPENING" actId="10" id="5_U1">ciao il mio nome è oriana</speechAct>
-    <speechAct act="QUESTION" actId="12" id="5_S2">Quali sono le tue abitudini alimentari?</speechAct>
-    <speechAct act="STAT-ABOUT-SELF" actId="5" id="5_U2">ho delle abitudini un pò disordinate,nel senso che mangio anche fupri orario</speechAct>
-    <speechAct act="QUESTION" actId="12" id="5_S3">Ti piace mangiare?</speechAct>
-    <speechAct act="STAT-ABOUT-SELF" actId="5" id="5_U2">si,ma dipende dal periodo,se sono sotto stress mangio meno,quando sono più rilassata mangio molto</speechAct>
-    <speechAct act="QUESTION" actId="12" id="5_S4">Segui una dieta variata?</speechAct>
-    <speechAct act="GENERIC-ANSWER" actId="7" id="5_U4">no</speechAct>
+    <speechAct act="OPENING" actId="13" id="T_5_S1">Ciao, il mio nome e' Valentina. Sono qui per darti dei suggerimenti su come migliorare la tua dieta.</speechAct>
+    <speechAct act="OPENING" actId="10" id="T_5_U1">ciao il mio nome è oriana</speechAct>
+    <speechAct act="QUESTION" actId="12" id="T_5_S2">Quali sono le tue abitudini alimentari?</speechAct>
+    <speechAct act="STAT-ABOUT-SELF" actId="5" id="T_5_U2">ho delle abitudini un pò disordinate,nel senso che mangio anche fupri orario</speechAct>
+    <speechAct act="QUESTION" actId="12" id="T_5_S3">Ti piace mangiare?</speechAct>
+    <speechAct act="STAT-ABOUT-SELF" actId="5" id="T_5_U2">si,ma dipende dal periodo,se sono sotto stress mangio meno,quando sono più rilassata mangio molto</speechAct>
+    <speechAct act="QUESTION" actId="12" id="T_5_S4">Segui una dieta variata?</speechAct>
+    <speechAct act="GENERIC-ANSWER" actId="7" id="T_5_U4">no</speechAct>
     ...
 ```
+
+Each participating team will initially have access to the training data only. Later, the unlabelled test data will be released. 
+
+The participants must provide results in a plain text file with comma-separated fields. Only the dialogue turn of the User, marked as **U** (as in id="T_5_**U**4") will be subject to evaluation and should be returned. In the following, we report an example of a what a submitted run should look like. Please, note that the **id** in the first column (in bold) should be the same provided for each User dialogue turn in the test set, while the speech *act* label in the second column (in italic) is the prediction of your system. 
+
+>  **id**,*act*
+**T_5_U1**,*OPENING*
+**T_5_U2**,*STAT-ABOUT-SELF*
+**T_5_U4**,*GENERIC-ANSWER*
+...
 
 
 ### How to Participate
