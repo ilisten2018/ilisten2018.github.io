@@ -1,6 +1,6 @@
 ### News
 
-**27th May 2018:** Task [guidelines](https://github.com/ilisten2018/ilisten2018.github.io/blob/master/ilisten2018guidelines.pdf) are now available.
+**27th May 2018:** Task [guidelines](https://ilisten2018.github.io/ilisten2018guidelines.pdf) are now available.
 
 **3rd April 2018:** Registration are now open! Fill-in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdAKar1gv-Spoc3cPGYyzgBG5-fETVWvKfvSO1_v-Wc6RNfjQ/viewform).
 
