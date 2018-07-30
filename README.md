@@ -98,7 +98,6 @@ The participants must provide results in a plain text file with comma-separated 
 Online registration will open on **26th March 2018**. Stay tuned!
 
 ### Important Dates
-*(tentative)*
 
 * **May 28th, 2018:** development data available to participants
 * **September 3rd, 2018:** test data available, registration closes
