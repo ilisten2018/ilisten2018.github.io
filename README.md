@@ -100,10 +100,10 @@ Online registration will open on **26th March 2018**. Stay tuned!
 ### Important Dates
 *(tentative)*
 
-* **28th May 2018:** development data available to participants
-* **3rd September 2018:** test data available, registration closes
-* **17th - 23rd September 2018:** evaluation window (system results due to task organizers)
-* **30th September 2018:** assessment returned to participants
+* **May 28th, 2018:** development data available to participants
+* **September 3rd, 2018:** test data available, registration closes
+* **September 23rd, 2018:** system results due to task organizers
+* **October 1st, 2018:** assessment returned to participants
 * **October 2018 (tentative):** technical reports due to organizers (camera ready)
 * **12th or 13th December 2018:** final workshop
 
