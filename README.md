@@ -1,8 +1,9 @@
 ### News
+**22nd August 2018:** Task [guidelines](https://ilisten2018.github.io/ilisten-2018-guidelines.pdf) updated.
 
 **28th May 2018:** The **development dataset** is now available for [download](https://github.com/evalita2018/data/tree/master/ILISTEN).
 
-**27th May 2018:** Task [guidelines](https://ilisten2018.github.io/ilisten2018guidelines.pdf) are now available.
+**27th May 2018:** Task [guidelines](https://ilisten2018.github.io/ilisten-2018-guidelines.pdf) are now available.
 
 **3rd April 2018:** Registration are now open! Fill-in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdAKar1gv-Spoc3cPGYyzgBG5-fETVWvKfvSO1_v-Wc6RNfjQ/viewform).
 
